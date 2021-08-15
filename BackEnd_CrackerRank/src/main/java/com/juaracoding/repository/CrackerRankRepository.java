@@ -1,0 +1,14 @@
+package com.juaracoding.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.juaracoding.entity.CrackerRank;
+
+public interface CrackerRankRepository extends JpaRepository<CrackerRank, Long> {
+
+	@Query(value = "Select * from ujian where solved = 1", nativeQuery = true)
+	List<CrackerRank> findSolvedUjian();
+}
