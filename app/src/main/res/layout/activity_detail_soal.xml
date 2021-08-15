@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailSoal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:id="@+id/txt_judul_atas"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/border"
+            android:focusable="true"
+            android:gravity="top"
+            android:hint="Task Here"
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:textSize="20dp" />
+
+        <com.novel.crackerrank_prototype.codeview.CodeView
+            android:id="@+id/edit_codeView"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="100dp"
+            android:padding="8dp"
+            android:hint="Public Static Void main [args] {
+                \n}"
+            android:background="@drawable/border"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dp"
+            android:text="Submit"
+            app:cornerRadius="18dp"
+            android:backgroundTint="@color/pureapple"/>
+
+    </LinearLayout>
+    
+</LinearLayout>
